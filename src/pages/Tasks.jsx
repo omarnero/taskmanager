@@ -40,6 +40,9 @@ const Tasks = () => {
         toast.success("add tasks");
         console.log(data);
        }
+       const updateHandler = ()=>{
+        
+       }
   return (
     <div>
     <Header/>
