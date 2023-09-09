@@ -1,0 +1,33 @@
+.card__admin {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #fafafa;
+    padding: 0.2rem 1rem;
+    align-items: center;
+    border-radius: 8px;
+    gap: 1rem;
+    max-width: 18rem;
+  }
+  .admin__data p {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #374151;
+    opacity: 0.5;
+  }
+  .admin__data h2 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #373b5c;
+  }
+  .menu__item {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .menu__item p {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #202223;
+  }
+  

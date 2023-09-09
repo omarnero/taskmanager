@@ -1,0 +1,111 @@
+.nav__menu {
+    position: relative;
+    height: 100vh;
+  }
+  .nav__minmenu {
+    position: relative;
+    height: 90vh;
+  }
+  .nav {
+    background: #fff;
+    width: 24rem;
+    height: 100%;
+    position: fixed;
+    top: 5;
+    left: 0;
+    display: flex;
+    /* margin-top: 7rem; */
+    padding: 2rem 0rem;
+  }
+  .navMobile {
+    background: #fff;
+    width: 8.5rem;
+    height: 100%;
+    position: fixed;
+    top: 5;
+    left: 0;
+    display: flex;
+    /* margin-top: 7rem; */
+    /* align-items: center; */
+    justify-content: center;
+    padding: 2rem 0rem;
+  }
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .navMobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .nav li {
+    list-style: none;
+    
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 21rem;
+    margin: 0.1rem 1.5rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .navMobile li {
+    list-style: none;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .nav__name {
+  
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #373b5c;
+  }
+  .nav li:hover {
+    background: rgba(127, 64, 152, 0.1);
+  }
+  .navMobile li:hover {
+    background: rgba(127, 64, 152, 0.1);
+  }
+  .navMobile .active {
+    background: rgba(127, 64, 152, 0.1);
+  }
+  .na .active {
+    background: rgba(127, 64, 152, 0.1);
+  }
+  .sub__link {
+    margin-top: -2rem;
+  }
+  .sub__link li {
+    display: inline-block;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding-left: 3.5rem;
+    color: #373b5c;
+    cursor: pointer;
+  }
+  .nav ul:last-child {
+    color: red;
+  }
+  ul .lastEl {
+    /* background: red; */
+    align-self: flex-end;
+    margin-top: 50vh;
+  }
+  
+  /* @media (max-width: 1300px) {
+    .nav {
+      width: 20rem;
+    }
+  } */
+  

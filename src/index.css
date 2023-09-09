@@ -1,13 +1,215 @@
-body {
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: inherit;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  position: relative;
+}
+.templateAuction {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background: #f5f5f5;
+  min-height: 120vh;
+  margin-top: 7rem;
+}
+.template {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background: #f5f5f5;
+  min-height: 100vh;
+  margin-top: 7rem;
+  /* height: 100vh; */
+  /* position: relative; */
+  /* margin-top: 7rem; */
+}
+.profileform{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.profileImg{
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 4px;
+}
+.templateGrid {
+  display: grid;
+  grid-template-columns: 0.35fr 5fr;
+  background: #f5f5f5;
+  min-height: 100vh;
+  margin-top: 7rem;
+}
+button {
+  cursor: pointer;
+}
+.active {
+  background: #e6f8e9;
+  border-radius: 6px;
+  padding: 0.2rem 0.8rem;
+  color: #20a54b;
+  font-size: 1.2rem;
+  width: 5rem;
+}
+.inactive {
+  background: #ff616d;
+  border-radius: 6px;
+  padding: 0.2rem 0.8rem;
+  color: #fff !important;
+  font-size: 1.2rem;
+  width: 5rem;
+}
+.hidden {
+  visibility: hidden;
+}
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+/* operation style */
+.operations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.operations .search {
+  display: flex;
+  align-items: center;
+}
+.operations .search input {
+  height: 4rem;
+  border: 1px solid #cfd8dc;
+  /* border-radius: 3px; */
+  background: #ffffff;
+  padding: 0.5rem;
+  width: 30rem;
+}
+.operations .search button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #7f4098;
+  height: 4rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #7f4098;
+  border-radius: 0px 2px 2px 0px;
+}
+.operations .search input::placeholder {
+  color: #cfd8dc;
+}
+.operations .search btn {
+}
+.operations .actions {
+  display: flex;
+  align-items: center;
+  border-collapse: collapse;
+  border-radius: 0px 2px 2px 0px;
+  background: #ffffff;
+  margin: 2rem 0rem 1rem;
+}
+.operations .actions button {
+  border-radius: 0px 2px 2px 0px;
+  background: #ffffff;
+  padding: 0.7rem 1.4rem;
+  border: 1px solid #eceff1;
+  color: #374151;
+  font-weight: 500;
+  font-family: "Nunito";
+}
+.operations .actions button:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+.operations .actions .Action__active {
+  background: #3ac0a0;
+  color: #fff;
+}
+.child {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.error {
+  font-size: 1.4rem;
+  color: #ff3333;
+}
+.errorPhone {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #ff3333;
+  margin-top: -1rem !important;
+}
+@media (max-width: 1500px) {
+  html {
+    font-size: 55%;
+  }
+  .template {
+    grid-template-columns: 1fr 6fr;
+  }
+  .templateAuction {
+    grid-template-columns: 1fr 6fr;
+  }
+}
+@media (max-width: 1500px) {
+  html {
+    font-size: 50%;
+  }
+  .template {
+    grid-template-columns: 1fr 6fr;
+  }
+  .templateAuction {
+    grid-template-columns: 1fr 6fr;
+  }
+}
+@media (max-width: 1400px) {
+  html {
+    font-size: 45%;
+  }
+  .template {
+    grid-template-columns: 1fr 6fr;
+  }
+  .templateAuction {
+    grid-template-columns: 1fr 6fr;
+  }
+}
+@media (max-width: 1250px) {
+  html {
+    font-size: 40%;
+  }
+  .template {
+    grid-template-columns: 1fr 6fr;
+  }
+  .templateAuction {
+    grid-template-columns: 1fr 6fr;
+  }
+}
+@media (max-width: 1100px) {
+  html {
+    font-size: 40%;
+  }
+  .template {
+    grid-template-columns: 1fr 5fr;
+  }
+  .templateAuction {
+    grid-template-columns: 1fr 5fr;
+  }
 }
